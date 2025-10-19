@@ -1,0 +1,16 @@
+[package]
+name = "sys_tools"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+core_lib = { path = "../core_lib" }
+dirs = "5.0.1"
+serde = { version = "1.0.203", features = ["derive"] }
+thiserror = "1.0.61"
+toml = "0.8.14"
+base64 = "0.22"
+chrono = { version = "0.4.38", features = ["serde"] }
+plist = { version = "1.6.1", features = ["serde"] }
+
+[dev-dependencies]

@@ -1,0 +1,14 @@
+[package]
+name = "csr"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rcgen = "0.13.1"
+rsa = "0.9.6"
+rand = "0.8.5"
+core_lib = { path = "../core_lib" }
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+
+[dev-dependencies]
+tempfile = "3"

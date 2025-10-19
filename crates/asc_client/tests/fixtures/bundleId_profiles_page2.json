@@ -1,0 +1,31 @@
+{
+  "data": [
+    {
+      "id": "PROFILE2",
+      "type": "profiles",
+      "attributes": {
+        "name": "Dev Profile 2",
+        "profileType": "IOS_APP_DEVELOPMENT",
+        "profileState": "ACTIVE",
+        "profileContent": "cHJvZmlsZS1kYXRhLTI=",
+        "uuid": "UUID-2",
+        "expirationDate": "2026-01-31T12:00:00Z"
+      }
+    },
+    {
+      "id": "PROFILE3",
+      "type": "profiles",
+      "attributes": {
+        "name": "Dev Profile 3",
+        "profileType": "IOS_APP_DEVELOPMENT",
+        "profileState": "INACTIVE",
+        "profileContent": "cHJvZmlsZS1kYXRhLTM=",
+        "uuid": "UUID-3",
+        "expirationDate": "2026-06-30T00:00:00Z"
+      }
+    }
+  ],
+  "links": {
+    "self": "/v1/bundleIds/BUNDLE123/profiles?cursor=abc"
+  }
+}

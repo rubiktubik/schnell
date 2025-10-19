@@ -1,0 +1,10 @@
+{
+  "data": [
+    {
+      "id": "BUNDLE123",
+      "type": "bundleIds",
+      "attributes": { "identifier": "com.example.app" }
+    }
+  ],
+  "links": { "self": "/v1/bundleIds?filter[identifier]=com.example.app&limit=1" }
+}
