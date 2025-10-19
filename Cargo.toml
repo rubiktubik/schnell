@@ -2,4 +2,9 @@
 resolver = "3"
 members = [ "crates/asc_client", "crates/cli","crates/core_lib", "crates/csr", "crates/sys_tools"]
 
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
+
 
