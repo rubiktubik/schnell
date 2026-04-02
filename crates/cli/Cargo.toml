@@ -5,6 +5,10 @@ edition = "2024"
 repository = "https://github.com/rubiktubik/schnell"
 authors = ["Michael Tissen"]
 
+# Mark this package as the one to distribute with cargo-dist.
+[package.metadata.dist]
+dist = true
+
 [[bin]]
 name = "schnell"
 path = "src/main.rs"

@@ -2,9 +2,19 @@
 resolver = "3"
 members = [ "crates/asc_client", "crates/cli","crates/core_lib", "crates/csr", "crates/sys_tools"]
 
+# Config for cargo-dist
+[workspace.metadata.dist]
+# cargo-dist version to use in CI (matches .github/workflows/release.yml)
+cargo-dist-version = "0.30.0"
+# Generate and use GitHub release CI
+ci = "github"
+# Build release artifacts for x64 + ARM Linux
+# (binary name is configured in crates/cli/Cargo.toml as `schnell`)
+targets = ["x86_64-unknown-linux-gnu", "aarch64-unknown-linux-gnu"]
+# Produce distributable tarballs and install script
+installers = ["shell"]
+
 # The profile that 'dist' will build with
 [profile.dist]
 inherits = "release"
 lto = "thin"
-
-
